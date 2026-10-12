@@ -1,20 +1,21 @@
 "use client";
 
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
 
-const AnimationLottie = ({ animationPath, width }) => {
+// Dynamically load lottie-react ONLY in the browser to prevent "document is not defined"
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
+const AnimationLottie = ({ animationPath }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationPath,
+    path: animationPath, // Uses the string path "/lottie/study.json" we set earlier
     style: {
-      width: '95%',
-    }
+      width: "95%",
+    },
   };
 
-  return (
-    <Lottie {...defaultOptions} />
-  );
+  return <Lottie {...defaultOptions} />;
 };
 
 export default AnimationLottie;

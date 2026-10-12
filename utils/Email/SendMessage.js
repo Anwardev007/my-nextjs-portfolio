@@ -12,8 +12,8 @@ export const sendMessage = async (options) => {
   });
   const mailOptions = {
     from: options.email,
-    to: "mshafqat.developer@gmail.com",
-    subject: "MSR Portfolio",
+    to: "muhammadanwaar537@gmail.com",
+    subject: "MA Portfolio",
     text: `
     My Name is : ${options.name}\n
     My Email is : ${options.email}\n

@@ -15,16 +15,16 @@ function Footer() {
             © Developer Portfolio by{" "}
             <Link
               target="_blank"
-              href="https://www.linkedin.com/in/muhammad-shafqat-rasool-356540255/"
+              href="https://www.linkedin.com/in/muhammad-anwar-aab19930b"
               className="text-[#16f2b3]"
             >
-              M SHAFQAT
+              M ANWAR
             </Link>
           </p>
           <div className="flex items-center gap-5">
             <Link
               target="_blank"
-              href="https://github.com/shafqatdeveloper"
+              href="https://github.com/Anwardev007"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -32,7 +32,7 @@ function Footer() {
             </Link>
             <Link
               target="_blank"
-              href="https://github.com/shafqatdeveloper"
+              href="https://github.com/Anwardev007"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />

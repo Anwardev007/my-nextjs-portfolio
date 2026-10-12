@@ -16,6 +16,7 @@ export async function POST(Request, Response) {
       statusText: "OK",
     });
   } catch (error) {
+    console.error("NODEMAILER ERROR:", error);
     return NextResponse.json(error.message, {
       status: 501,
       statusText: "Server Error",
